@@ -81,6 +81,43 @@
         </div> <!--text written by me-->
       </div>
     </div>
+    
+    <!-- The columns -->
+    <div style="text-align:center">
+  <h2>My Travel Gallery</h2>
+  <p>Click on the images below to expand:</p>
+</div>
+<div class="row">
+  <div class="column">
+    <img src="img/cuba.jpg" alt="Cars in Cuba" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="img/buddha.jpg" alt="Tian Tan Budda HongKong" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="img/berlin.jpg" alt="Berlin Wall" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="img/venice.jpg" alt="Venice Canals" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:80%">
+  <div id="imgtext"></div>
+</div>
+
+<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+</script>
+
 
 
     <!--end-->
