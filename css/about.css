@@ -1,0 +1,50 @@
+html,body{
+  height:100%;
+  width:100%;
+}
+
+/* mountain picture */
+#home{
+  background: url(https://i.postimg.cc/90HhWPCN/mountains.jpg) no-repeat center center fixed;
+  display:table;
+  height:100%;
+  position:relative;
+  width:100%;
+  backgrund-size:cover;
+
+}
+
+/* home text */
+.landing-text{
+  display:table-cell;
+  text-align:center;
+  vertical-align:middle;
+}
+
+.landing-text h1{
+  font-size:40px;
+  font-weight:700;
+}
+
+/* centralised */
+.padding{
+  padding: 80px 10px;
+}
+
+.padding img{
+  width:100%;
+}
+
+#fixed{
+  background:url(https://i.postimg.cc/664rgr7x/background.jpg) no-repeat center center fixed;
+  display:table;
+  height:60%;
+  position: relative;
+  width: 100%;
+  background-size:cover;
+}
+
+/* Video */
+iframe {
+  margin-left: 30%;
+}
